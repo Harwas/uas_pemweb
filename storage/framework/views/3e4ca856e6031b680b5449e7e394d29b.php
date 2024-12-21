@@ -316,4 +316,4 @@ https://templatemo.com/tm-539-simple-house
 		});
 	</script>
 </body>
-</html>
+</html><?php /**PATH C:\Users\Asus\Herd\catering\resources\views/home.blade.php ENDPATH**/ ?>
