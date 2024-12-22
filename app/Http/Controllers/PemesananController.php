@@ -169,4 +169,16 @@ class PemesananController extends Controller
             'tomorrow' => $tomorrow,  // Kirimkan variabel tomorrow ke view
         ]);
     }
+
+    public function showBox()
+    {
+    $menuItems = MenuItem::where('type', 'Box')->get(); // Fetch box type menu items
+    return view('pesanbox', compact('menuItems'));
+    }
+
+    public function showPrasmanan()
+    {
+    $menuItems = MenuItem::where('type', 'Prasmanan')->get(); // Fetch prasmanan type menu items
+    return view('pesanprasmanan', compact('menuItems'));
+    }
 }

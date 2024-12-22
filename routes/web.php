@@ -17,3 +17,5 @@ Route::post('/pemesanan/kirim', [PemesananController::class, 'kirim'])->name('pe
 Route::get('/toko/pengiriman', [PemesananController::class, 'pengiriman'])->name('pengiriman');
 Route::get('/toko', [PemesananController::class, 'redirectToPemesanan'])->name('toko.redirect');
 Route::match(['get', 'post'], '/toko/struk', [PemesananController::class, 'showStruk'])->name('struk');
+Route::get('/pesanbox', [PemesananController::class, 'showBox'])->name('pesanbox');
+Route::get('/pesanprasmanan', [PemesananController::class, 'showPrasmanan'])->name('pesanprasmanan');

@@ -54,13 +54,13 @@
             </div>
         </main>
 
-        <section class="px-4 font-poppins bg-slate-100 py-10 lg:px-32">
+        <section class="px-4 font-poppins bg-slate-100 py-10 lg:px-32 justify-center">
             <hr class="h-[2px] mb-3 border border-gray-900">
-            <h1 class="font-semibold text-2xl uppercase mb-4">Daftar Menu</h1>
+            <h1 class="font-semibold text-2xl uppercase mb-4">Mode Pemesanan</h1>
 
             <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3">
                 @if ($menuItems->isEmpty())
-                    <p>Tidak ada data menu tersedia.</p>
+                    <p>Pilih mode pemesanan yang tersedia</p>
                 @else
                     @foreach ($menuItems as $item)
                         <div>
@@ -89,64 +89,40 @@
                 @endif
             </div>
 
-            <div class="pt-10 pb-10 text-center">
-                <div class="flex items-center justify-center mb-2">
-                    @for ($i = 0; $i < 5; $i++)
-                        <svg class="w-10 h-10 text-yellow-400 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor" viewBox="0 0 22 20">
-                            <path
-                                d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+            <div class="grid grid-cols-1 p-6 gap-y-6 md:grid-cols-2 md:gap-x-6 lg:px-32">
+                <div
+                    class="p-10 bg-slate-100 border border-gray-200 rounded-lg shadow-md shadow-yellow-500 flex flex-col justify-center h-full">
+                    <div class="text-center space-y-3 px-5">
+                        <h1 class="text-3xl mb-3 font-bold uppercase text-gray-700">Box</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-7 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
                         </svg>
-                    @endfor
-                    <p class="ms-1 text-md font-medium text-gray-500">4.80</p>
-                    <p class="ms-1 text-md font-medium text-gray-500">dari</p>
-                    <p class="ms-1 text-md font-medium text-gray-500">5</p>
-                </div>
-                <p class="text-sm font-medium text-gray-500">100+ Rating Pelanggan</p>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="text-sm font-medium text-blue-600 hover:underline">5 star</a>
-                    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded">
-                        <div class="h-5 bg-yellow-300 rounded" style="width: 95%"></div>
+                        <div class="text-lg space-y-2 font-poppins">
+                            <div>Restoran kami menawarkan pengantaran makanan dalam bentuk box untuk kebutuhan sesuai porsi.</div>
+                            <div>
+                                <a href="/pesanbox" class="underline text-yellow-400 font-semibold">Pesan Sekarang</a>
+                            </div>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-gray-500">95%</span>
                 </div>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="text-sm font-medium text-blue-600 hover:underline">4 star</a>
-                    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded">
-                        <div class="h-5 bg-yellow-300 rounded" style="width: 5%"></div>
+                <div
+                    class="p-10 bg-slate-100 border border-gray-200 rounded-lg shadow-md shadow-yellow-500 flex flex-col justify-center h-full">
+                    <div class="text-center space-y-3 px-5">
+                        <h1 class="text-3xl mb-3 font-bold uppercase text-gray-700">Prasmanan</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-7 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+                        </svg>
+                        <div class="text-lg space-y-2 font-poppins">
+                            <div>Restoran kami menawarkan pengantaran makanan dalam bentuk prasmanan untuk kepuasan bagi anda.</div>
+                            <div>
+                                <a href="/pesanprasmanan" class="underline text-yellow-400 font-semibold">Pesan Sekarang</a>
+                            </div>
+                        </div>
                     </div>
-                    <span class="text-sm font-medium text-gray-500">5%</span>
-                </div>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="text-sm font-medium text-blue-600 hover:underline">3 star</a>
-                    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded">
-                        <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-500">0%</span>
-                </div>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="text-sm font-medium text-blue-600 hover:underline">2 star</a>
-                    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded">
-                        <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-500">0%</span>
-                </div>
-                <div class="flex items-center justify-center mt-4">
-                    <a href="#" class="text-sm font-medium text-blue-600 hover:underline">1 star</a>
-                    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded">
-                        <div class="h-5 bg-yellow-300 rounded" style="width: 0%"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-500">0%</span>
-                </div>
-            </div>
-            <hr class="h-[2px] mb-6 border border-gray-900">
-
-            <div class="grid grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-6 md:gap-y-0">
-                <div class="bg-gray-900 rounded-lg shadow-b-md shadow-gray-900">
-                    <img src="{{ asset('images/ayambakarthumbnail.jpg') }}" alt="Ayam Bakar" class="w-full h-[12em]">
-                </div>
-                <div class="bg-gray-900 rounded-lg shadow-b-md shadow-gray-900">
-                    <img src="{{ asset('images/ayamgorengthumbnail.jpg') }}" alt="Ayam Goreng" class="w-full h-[12em]">
                 </div>
             </div>
         </section>

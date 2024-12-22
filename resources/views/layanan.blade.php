@@ -122,5 +122,5 @@
             </div>
         </section>
         {{-- End Section III --}}
-    @endsection
-</x-layout>
+        @endsection
+    </x-layout>
