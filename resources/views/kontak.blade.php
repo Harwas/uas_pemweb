@@ -41,7 +41,7 @@
 
                                 <h2 class="text-xl">Nomor</h2>
                             </div>
-                            <a href="https://wa.me/6281297879722" target="_blank" class="text-md">0812-9787-97223</a>
+                            <a href="https://wa.me/6281297879722" target="_blank" class="text-md">0812-9787-9722</a>
                         </div>
 
                         <div class="px-4 pb-12">

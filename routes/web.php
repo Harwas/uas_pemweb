@@ -5,6 +5,7 @@ use App\Http\Controllers\PemesananController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\KontakController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/layanan', [LayananController::class, 'index'])->name('layanan');
@@ -19,3 +20,11 @@ Route::get('/toko', [PemesananController::class, 'redirectToPemesanan'])->name('
 Route::match(['get', 'post'], '/toko/struk', [PemesananController::class, 'showStruk'])->name('struk');
 Route::get('/pesanbox', [PemesananController::class, 'pesanBox'])->name('pesanbox');
 Route::get('/pesanprasmanan', [PemesananController::class, 'pesanPrasmanan'])->name('pesanprasmanan');
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

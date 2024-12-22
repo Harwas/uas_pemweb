@@ -43,6 +43,31 @@
                         Kontak
                     </a>
                 </li>
+                @guest
+                <!-- If the user is not authenticated -->
+                <li>
+                    <a href="{{ route('login') }}"
+                    class="block py-2 px-3 md:p-2 rounded {{ request()->routeIs('login') ? 'active' : 'bg-yellow-400 text-slate-100' }} 'hover:text-slate-100 hover:bg-yellow-400 md:hover:text-yellow-400 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent }}">
+                    Login</a>
+                </li>
+                <li>
+                    <a href="{{ route('register') }}" 
+                    class="block py-2 px-3 md:p-2 rounded {{ request()->routeIs('register') ? 'active' : 'bg-yellow-400 text-slate-100' }} 'hover:text-slate-100 hover:bg-yellow-400 md:hover:text-yellow-400 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent ? 'md:text-yellow-400' : 'md:text-slate-100' }}">
+                    Register</a>
+                </li>
+            @else
+                <!-- If the user is authenticated -->
+                <li>
+                    <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    Logout
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </li>
+            @endguest
             </ul>
         </div>
     </div>
