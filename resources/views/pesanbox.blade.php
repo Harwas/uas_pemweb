@@ -32,6 +32,15 @@
                     </div>
                 @endforeach
             </div>
+
+            {{-- Admin Button --}}
+            @auth
+                @if (auth()->user()->is_admin)
+                    <div class="text-center mt-6">
+                        <button class="px-6 py-2 bg-red-500 text-white rounded hover:bg-red-600">Admin Action</button>
+                    </div>
+                @endif
+            @endauth
         </section>
         {{-- End Menu Section --}}
 
