@@ -26,9 +26,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('layanan') }}"
-                        class="block py-2 px-3 md:p-2 rounded {{ $activePage === 'layanan' ? 'bg-yellow-400 text-slate-100' : 'hover:text-slate-100 hover:bg-yellow-400' }} md:hover:bg-transparent md:hover:text-yellow-400 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent {{ $activePage === 'layanan' ? 'md:text-yellow-400' : 'md:text-slate-100' }}">
-                        Layanan
+                    <a href="{{ route('profile') }}"
+                        class="block py-2 px-3 md:p-2 rounded {{ $activePage === 'profile' ? 'bg-yellow-400 text-slate-100' : 'hover:text-slate-100 hover:bg-yellow-400' }} md:hover:bg-transparent md:hover:text-yellow-400 md:transition-colors md:duration-500 md:ease-in-out md:text-lg md:bg-transparent {{ $activePage === 'profile' ? 'md:text-yellow-400' : 'md:text-slate-100' }}">
+                        Profile
                     </a>
                 </li>
                 <li>

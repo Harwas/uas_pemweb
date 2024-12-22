@@ -8,7 +8,7 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\DashboardController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
-Route::get('/profile', [ProfileController::class, 'index'])->name('layanan');
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/pemesanan', [PemesananController::class, 'index'])->name('pemesanan');
 Route::get('/pemesanan/{slug}', [PemesananController::class, 'show'])->name('menu.show');
 Route::get('/kontak', [KontakController::class, 'index'])->name('kontak');

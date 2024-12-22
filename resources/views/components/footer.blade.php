@@ -52,9 +52,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('layanan') }}"
-                                class="block py-2 px-3 transition hover:text-yellow-400 {{ $activePage === 'layanan' ? 'text-yellow-400' : 'text-slate-100' }}">
-                                Layanan
+                            <a href="{{ route('profile') }}"
+                                class="block py-2 px-3 transition hover:text-yellow-400 {{ $activePage === 'profile' ? 'text-yellow-400' : 'text-slate-100' }}">
+                                Profile
                             </a>
                         </li>
                         <li>
