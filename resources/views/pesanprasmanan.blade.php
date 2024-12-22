@@ -29,6 +29,9 @@
                             <button class="px-4 py-2 bg-yellow-400 text-white rounded hover:bg-yellow-500" onclick="addToFavorites('{{ $item->id }}')">Tambah ke Favorit</button>
                             <span id="favorites-count-{{ $item->id }}" class="text-gray-600">{{ $item->favorites_count }} Favorit</span>
                         </div>
+                        <div class="mt-4">
+                            <button class="px-4 py-2 bg-blue-400 text-white rounded hover:bg-blue-500" onclick="addToCart('{{ $item->id }}', '{{ $item->name }}', {{ $item->price }})">Tambah ke Keranjang</button>
+                        </div>
                     </div>
                 @endforeach
             </div>
