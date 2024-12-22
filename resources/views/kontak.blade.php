@@ -3,11 +3,11 @@
         <x-header></x-header>
         <section class="bg-slate-100 font-cabin lg:px-20">
             <div class="w-full py-20">
-                <iframe
-                    src=""
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4646218475827!2d106.82424971046132!3d-6.4626699935019625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ebcba1ff44d5%3A0x9aa09cb6539bb955!2sPondora%20Catering!5e0!3m2!1sen!2sid!4v1734867333703!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     height="650" style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" class="w-full">
-                    ></iframe>
+                    </iframe>
 
                 <div class="grid md:pt-20">
                     <div class="bg-white rounded-lg md:px-10">

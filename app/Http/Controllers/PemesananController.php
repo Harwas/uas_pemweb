@@ -170,15 +170,15 @@ class PemesananController extends Controller
         ]);
     }
 
-    public function showBox()
+    public function pesanBox()
     {
-    $menuItems = MenuItem::where('type', 'Box')->get(); // Fetch box type menu items
-    return view('pesanbox', compact('menuItems'));
+        $menuItems = MenuItem::all(); // Adjust the query as needed
+        return view('pesanbox')->with($this->viewData('Pesan Box - Pondora Catering', 'pesanbox', $menuItems));
     }
 
-    public function showPrasmanan()
+    public function pesanPrasmanan()
     {
-    $menuItems = MenuItem::where('type', 'Prasmanan')->get(); // Fetch prasmanan type menu items
-    return view('pesanprasmanan', compact('menuItems'));
+        $menuItems = MenuItem::all(); // Adjust the query as needed
+        return view('pesanprasmanan')->with($this->viewData('Pesan Prasmanan - Pondora Catering', 'pesanprasmanan', $menuItems));
     }
 }
