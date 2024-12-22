@@ -57,37 +57,8 @@
         <section class="px-4 font-poppins bg-slate-100 py-10 lg:px-32 justify-center">
             <hr class="h-[2px] mb-3 border border-gray-900">
             <h1 class="font-semibold text-2xl uppercase mb-4">Mode Pemesanan</h1>
+            <p>Pilih mode pemesanan yang sesuai dengan kebutuhan Anda.</p>
 
-            <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3">
-                @if ($menuItems->isEmpty())
-                    <p>Pilih mode pemesanan yang tersedia</p>
-                @else
-                    @foreach ($menuItems as $item)
-                        <div>
-                            <div class="relative h-[20em]">
-                                <img src="{{ asset('images/' . $item->photo) }}" alt="{{ $item->name }}"
-                                    class="w-full h-[20em]">
-                                <div
-                                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                    <a href="{{ route('menu.show', $item->slug) }}"
-                                        class="px-4 py-2 font-semibold text-slate-100 ring-1 ring-yellow-400 bg-transparent rounded hover:bg-yellow-400 duration-300">Lihat
-                                        Detail</a>
-
-                                </div>
-                            </div>
-                            <div class="mt-3">
-                                <h1 class="text-2xl font-medium uppercase">{{ $item->name }}</h1>
-                                <div class="flex items-center gap-x-2">
-                                    <h1 class="text-xl font-medium text-yellow-400">Rp
-                                        {{ number_format($item->price, 0, ',', '.') }}</h1>
-                                    <h2 class="text-sm line-through">
-                                        Rp{{ number_format($item->price * 1.2, 0, ',', '.') }}</h2>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                @endif
-            </div>
 
             <div class="grid grid-cols-1 p-6 gap-y-6 md:grid-cols-2 md:gap-x-6 lg:px-32">
                 <div
