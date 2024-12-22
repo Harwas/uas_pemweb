@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('menu_items', function (Blueprint $table) {
+        Schema::create('menu_boxes', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('photo');
-            $table->text('description');
+            $table->foreignIdFor(App\Models\MenuItem::class)->constrained()->onDelete('cascade');
+            $table->integer('price');
             $table->timestamps();
         });
+        
     }
 
     /**
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('menu_items');
+        Schema::dropIfExists('menu_boxes');
     }
 };
