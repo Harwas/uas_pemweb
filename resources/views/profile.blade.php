@@ -8,8 +8,8 @@
             <div class="relative z-10 flex items-center justify-center h-full md:pt-12">
                 <div class="text-center max-w-2xl -space-y-2 w-full px-5 md:pl-10 md:-space-y-1 lg:-space-y-4 lg:pl-7">
                     <h1 class="text-6xl text-yellow-400 font-medium tracking-tight mb-2 font-euphoria lg:mb-5 md:text-8xl">
-                        Berbagai</h1>
-                    <p class="text-xl font-poppins font-semibold uppercase text-slate-100 md:text-5xl">Layanan</p>
+                    Profile Perusaaan</h1>
+                    <p class="text-xl font-poppins font-semibold uppercase text-slate-100 md:text-5xl">PT. PONDORA KASABA MABRUR</p>
                 </div>
             </div>
         </main>
