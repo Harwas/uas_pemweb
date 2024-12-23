@@ -47,7 +47,9 @@
                     <img class="rounded-lg object-cover w-full h-full" src="images/cateringphoto2.jpg" alt="">
                 </div>
             </div>
-
+            <iframe src="pdf/profile_perusahaan.pdf" width="100%" height="600px">
+                Your browser does not support PDFs.
+            </iframe>
             <div class="relative z-10 flex items-center justify-center h-full lg:h-auto font-poppins">
                 <div class="text-center max-w-7xl px-4 md:px-12 lg:py-16">
                     <div
@@ -85,12 +87,9 @@
 
         {{-- Start Section III --}}
         <section class="bg-slate-100 pb-10 pt-14">
-        <div style="width: 50%; height: 300px; margin: 0 auto;">
-    {!! $chart->container() !!}
-</div>
-
-
-
+            <div style="width: 50%; height: 300px; margin: 0 auto;">
+                {!! $chart->container() !!}
+            </div>
             <script src="{{ $chart->cdn() }}"></script>
             {{ $chart->script() }}
         </section>
